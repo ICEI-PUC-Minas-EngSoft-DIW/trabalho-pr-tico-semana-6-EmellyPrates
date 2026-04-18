@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Rouge+Script&display=swap');@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Imperial+Script&family=Rouge+Script&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #F2C4CD;
+  color: #2c1a26;
+  min-height: 100vh;
+}
+header {
+  background: #051F45;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-radius: 0;
+}
+.divider{
+  width: 1px;
+  height: 20px;
+  background:rgb(74, 68, 114);
+}
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-style: italic;
+}
+.banner p {
+  font-family: 'DM Sans', sans-serif;
+}
+.banner-img{
+  max-width: 200px;
+  max-height: 200px;
+  
+  
+}
+.title{
+  font-family: "Rouge Script", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: #051F45;
+  gap: 20px;
+  text-align: center;
+  
+}
+.logo-texto {
+  font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #F2C4CD;
+}
+
+.menu-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #f3d98f;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+}
+
+.menu-usuario h3 {
+  line-height: 1;
+}
+
+.perfil {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #f5e8ef;
+}
+
+.funcoes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  width: auto;
+}
+
+.funcoes ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+
+}
+.funcoes ul li{
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(245, 232, 239, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.funcoes a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #f5e8ef;
+}
+
+.funcoes a svg {
+  width: 17px;
+  height: 17px;
+}
+
+
+.painel {
+  background: #fff;
+  border-bottom: 0.5px solid rgba(240, 105, 195, 0.1);
+  display: flex;
+  padding: 0 20px;
+  gap: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 20px;
+  overflow-x: auto;
+}
+
+.painel a {
+  text-decoration: none;
+  color: #6b5060;
+  font-size: 13px;
+  padding: 13px 16px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 0;
+}
+
+.painel a:hover {
+  color: #8b2e62;
+  border-bottom-color: #8b2e62;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+section {
+  background: #fff;
+  border-radius: 14px;
+  border: 0.5px solid rgba(44, 26, 38, 0.08);
+  padding: 0;
+  width: auto;
+  margin: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+#mural {
+  flex: 1.2;
+}
+
+.titulo-mural {
+  padding: 18px 20px 14px;
+  border-bottom: 0.5px solid rgba(44, 26, 38, 0.07);
+  background: transparent;
+  justify-content: flex-start;
+}
+
+.titulo-mural h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: #051F45;
+  font-weight: normal;
+}
+
+article {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+article h3 {
+  font-size: 13px;
+  color: #8a707f;
+  font-weight: 400;
+}
+
+.caixa-interna {
+  background: #f2c4cd4b;
+  border: 0.5px solid rgba(139, 46, 98, 0.1);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #4a3040;
+  line-height: 2.2;
+}
+
+.caixa-interna span {
+  font-weight: 500;
+  color: #2c1a26;
+}
+
+.tarefas {
+  background: #e7d3d74b;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border: 0.5px solid rgba(44, 26, 38, 0.07);
+}
+
+.container-tarefas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.tarefas-titulo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #2c1a26;
+  font-weight: normal;
+}
+
+.tarefas-button {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  border: none;
+  background: #8b2e62;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.tarefas-button:hover {
+  background: #f3eef1;
+}
+
+.tarefas table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.tarefas table tr {
+  border-bottom: 0.5px solid rgba(212, 175, 200, 0.08);
+}
+
+.tarefas table tr:last-child {
+  border-bottom: none;
+}
+
+.tarefas table td {
+  padding: 8px 4px;
+  color: #4a3040;
+}
+
+.financeiro {
+  background: #f2c4cd4b;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border: 0.5px solid rgba(44, 26, 38, 0.07);
+}
+
+.financeiro h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #2c1a26;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.financeiro p {
+  font-size: 13px;
+  color: #6b5060;
+  margin-top: 6px;
+}
+
+.financeiro p span {
+  font-weight: 500;
+  color: #2c1a26;
+  font-size: 16px;
+}
+
+#section2 {
+  width: 300px;
+  flex: 0 0 300px;
+  right: auto;
+}
+
+.mural2 {
+  padding: 18px 20px 14px;
+  border-bottom: 0.5px solid rgba(44, 26, 38, 0.07);
+  background: transparent;
+}
+
+.mural2 h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #2c1a26;
+  font-weight: normal;
+}
+
+aside {
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside figure {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.1s;
+  margin: 0;
+}
+
+aside figure:hover {
+  background: #f2c4cd4b;
+}
+
+aside figure a {
+  flex-shrink: 0;
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  font-size: 0;
+}
+
+aside figure a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+aside figcaption {
+  font-size: 12px;
+  color: #8b2e62;
+  font-weight: 500;
+}
+
+.section-cards{
+  margin: 10px;
+
+}
+.cards-grid{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content:center;
+}
+.section-cards h2{
+  font-family: 'DM Serif Display', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #051F45;
+  font-weight: normal;
+  margin: 20px;
+  align-items: center;
+  
+}
+.card{
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.card img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card h3{
+  padding: 10px;
+}
+
+.card p{
+  padding: 0 12px 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+footer {
+  background: #051F45;
+  border-radius: 0;
+  padding: 0;
+  display: block;
+  margin-top: auto;
+}
+
+.rodape {
+  text-align:center;
+  padding: 14px;
+  justify-content: space-between;
+}
+
+.rodape h2 {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(254, 252, 253, 0.988);
+  letter-spacing: 0.5px;
+}
+
+.rodape p{
+  font-size: 11px;
+  color: #edf1f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+input, button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+#menuToggle{
+  display: none;
+
+
+}
+
+.menu-icon{
+  display: none;
+
+}
+
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  #section2 {
+    width: 100%;
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px){
+
+  body{
+    padding-top: 70px;
+  }
+  .logo{
+    flex: 1;
+  }
+  .menu-usuario{
+    flex: 2;
+    justify-content: center;
+  }
+
+  .cabecalho {
+    padding: 12px 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cabecalho nav{
+    display: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .funcoes{
+    display: flex;
+    position:fixed;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    overflow: hidden;
+      -webkit-transition: height 0.3s;
+      -moz-transition: height 0.3s;
+      -ms-transition: height 0.3s;
+      -o-transition: height 0.3s;
+      transition: height 0.3s;
+  }
+
+  .funcoes li{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    
+  }
+  
+.funcoes li a{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+.menu-icon{
+  display: block;
+  color: #F2C4CD;
+  width: 50px;
+  height: inherit;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  line-height: 60px;
+  z-index: 999;
+}
+.menu-icon i{
+  font-size: 1.7em;
+  display: block;
+  color: #F2C4CD;
+  position: static; 
+  line-height: normal;
+}
+.section3 {
+    margin: 0 16px 16px;
+  }
+
+
+#menuToggle:checked ~ label i:nth-child(2){
+  display: block;
+
+}
+
+#menuToggle:checked ~ label i:first-child{
+  display: none;
+}
+
+#menuToggle:not(:checked) ~ label i:first-child{
+  display: block;
+}
+#menuToggle:not(:checked) ~ label i:nth-child(2){
+  display: none;
+
+}
+
+#menuToggle:checked ~ ul {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.banner img{
+  width: 200px;
+  height: 250px;
+}
+.painel a{
+  font-size: 11px;       
+  padding: 9px 12px;     
+  gap: 4px;   
+
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+}
+
+.card h3{
+  font-size: 10px;
+}
+.card p{
+  font-size: 9px;
+}
+
+}
